@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/materialize.css')
+    body
+        header
+            nav
+                .nav-wrapper
+                    a.brand-logo.center(href="#")= title
+        block content
+        script(type="test/javascript" src="/js/materialize.js")
