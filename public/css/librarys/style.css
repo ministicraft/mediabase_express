@@ -12,9 +12,14 @@ header, main, footer {
 
 .collection-item {
 }
-.artwork img {
+.artwork > img {
   overflow: auto;
   width: 100%;
 }
-.title {
+.dataTable-table > thead > tr > td > a {
+  color: black;
+}
+
+.dataTable-selector {
+  display: unset;
 }

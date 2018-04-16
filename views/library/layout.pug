@@ -2,20 +2,22 @@ doctype html
 html
     head
         title= title
-        link(rel='stylesheet', href='/css/librarys/style.css')
-        link(rel='stylesheet', href='/css/materialize.css')
+        link(rel='stylesheet', href='/css/librarys/style.css', type="text/css")
+        link(rel='stylesheet', href='/css/materialize.css', type="text/css")
+        link(rel="stylesheet", href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" type="text/css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
     body
         header
             nav
                 .nav-wrapper
                     a.brand-logo.center(href="#")= title
+                    a.sidenav-trigger(href="#", data-target="slide-out")
+                        i.material-icons menu
         ul#slide-out.sidenav.sidenav-fixed
             li
                 a(href="/") Home
                     i.material-icons home
-        a.sidenav-trigger(href="#" data-target="slide-out")
-            i.material-icons menu
         block content
-        script(type="text/javascript" src="/js/materialize.js")
-        script(type='text/javascript' src="/js/librarys/librarys.js")
+        script(type="text/javascript", src="/js/materialize.js")
+        script(type="text/javascript", src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js")
+        script(type='text/javascript', src="/js/librarys/librarys.js")
