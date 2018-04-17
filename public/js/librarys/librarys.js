@@ -5,7 +5,7 @@ var instance = M.Sidenav.init(elem, {
 var dataTable = new DataTable("#myTable", {
     searchable: true,
     perPage: 10,
-    ajax: "/data.json",
+    ajax: "/api/books",
     columns: [
         {
             select: 0,
